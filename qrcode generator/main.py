@@ -39,8 +39,10 @@ END:VCARD"""
 # Define the WiFi data
 wifi = "WIFI:S:Example_Network;T:WPA;P:password123;;"
 
+portfolio = "https://bendavid.pythonanywhere.com/"
+
 # Add a YouTube video link
-qr.add_data('https://bendavid.pythonanywhere.com/')
+qr.add_data(portfolio)
 qr.make(fit=True)
 
 # Generate the QR code with fun colors
@@ -59,4 +61,4 @@ logo = logo.resize((50, 50))
 
 # Save or show the image
 img.show()
-img.save("custom_qr_code.png")
+img.save("wifi_qr_code.png")
