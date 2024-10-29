@@ -1,7 +1,7 @@
 import random
 import string
 
-def generate_random_password(length=12):
+def generate_random_password(length):
     # Define the character sets for each type of password
     lowercase_letters = string.ascii_lowercase
     uppercase_letters = string.ascii_uppercase
@@ -26,5 +26,5 @@ def generate_random_password(length=12):
     return password_str
 
 # Generate a random password
-random_password = generate_random_password()
+random_password = generate_random_password(24)
 print(random_password)
