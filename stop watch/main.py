@@ -2,6 +2,8 @@ import time
 print("Press enter to start...")
 print("Press ctrl+c to cancel...")
 
+# Infinite loop for the stopwatch
+
 while True:
     try:
         input()
